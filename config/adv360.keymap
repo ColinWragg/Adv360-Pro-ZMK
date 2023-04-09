@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-  &none  &kp N1     &kp N2            &kp N3            &kp N4  &kp N5               &kp DELETE                                                                                        &mo 2  &kp N6             &kp N7     &kp N8         &kp N9     &kp N0   &none
-  &none   &kp Q      &kp W             &kp E             &kp R   &kp T             &kp CAPSLOCK                                                                                      &kp TAB   &kp Y              &kp U      &kp I          &kp O      &kp P   &none
-  &none   &kp A      &kp S             &kp D             &kp F   &kp G                    &to 1  &kp LEFT_CONTROL       &kp ESC   &none   &none      &kp ENTER  &kp RIGHT_CONTROL      &sl 1   &kp H              &kp J      &kp K          &kp L   &kp SEMI   &none
-  &none   &kp Z      &kp X             &kp C             &kp V   &kp B                    &none             &none  &kp LEFT_GUI   &none   &none  &kp RIGHT_GUI              &none      &none   &kp N              &kp M  &kp COMMA        &kp DOT   &kp FSLH   &none
-  &none   &none  &kp EQUAL  &kp SINGLE_QUOTE  &kp LEFT_BRACKET                    &kp BACKSPACE    &kp LEFT_SHIFT  &kp LEFT_ALT                  &kp RIGHT_ALT    &kp RIGHT_SHIFT  &kp SPACE          &kp RIGHT_BRACKET  &kp MINUS  &kp BACKSLASH  &kp GRAVE   &none
+  &none  &kp N1     &kp N2            &kp N3            &kp N4  &kp N5               &kp DELETE                                                                                            &mo 2  &kp N6             &kp N7     &kp N8         &kp N9     &kp N0   &none
+  &none   &kp Q      &kp W             &kp E             &kp R   &kp T             &kp CAPSLOCK                                                                                          &kp TAB   &kp Y              &kp U      &kp I          &kp O      &kp P   &none
+  &none   &kp A      &kp S             &kp D             &kp F   &kp G                    &to 1  &kp LEFT_SHIFT      &kp LEFT_ALT   &none   &none      &kp RIGHT_ALT  &kp RIGHT_SHIFT      &sl 1   &kp H              &kp J      &kp K          &kp L   &kp SEMI   &none
+  &none   &kp Z      &kp X             &kp C             &kp V   &kp B                    &none           &none  &kp LEFT_CONTROL   &none   &none  &kp RIGHT_CONTROL            &none      &none   &kp N              &kp M  &kp COMMA        &kp DOT   &kp FSLH   &none
+  &none   &none  &kp EQUAL  &kp SINGLE_QUOTE  &kp LEFT_BRACKET                    &kp BACKSPACE      &kp ESCAPE      &kp LEFT_GUI                  &kp RIGHT_COMMAND        &kp ENTER  &kp SPACE          &kp RIGHT_BRACKET  &kp MINUS  &kp BACKSLASH  &kp GRAVE   &none
             >;
         };
 
