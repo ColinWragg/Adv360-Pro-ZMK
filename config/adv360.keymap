@@ -98,7 +98,7 @@
             bindings = <
 &trans        &trans          &trans        &trans            &trans  &trans  &trans                                                  &trans  &trans             &trans             &trans           &trans         &trans  &trans
 &trans        &trans          &trans        &trans            &trans  &trans  &trans                                                  &trans  &trans             &trans             &trans           &trans         &trans  &trans
-&trans  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sk RIGHT_CONTROL  &sk RIGHT_COMMAND  &sk RIGHT_SHIFT  &sk RIGHT_ALT  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans
 &trans        &trans          &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans             &trans           &trans         &trans  &trans
 &trans        &trans          &trans        &trans            &trans          &trans  &trans  &trans                  &trans  &trans  &trans                     &trans             &trans           &trans         &trans  &trans
             >;
