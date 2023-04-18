@@ -34,11 +34,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        right_control {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <77 43>;
-        };
     };
 
     keymap {
