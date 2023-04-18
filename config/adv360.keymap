@@ -18,30 +18,29 @@
 / {
     behaviors {
         #include "macros.dtsi"
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
-        };
-        foo: foo {
-            compatible = "zmk,behavior-sticky-key";
-            label = "FOO";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <10000>;
-            quick-release;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
+    };
+
+    macros {
+        right_shift_down: right_shift_down {
+            compatible = "zmk,behavior-macro";
+            label = "RIGHT_SHIFT_DOWN";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_SHIFT>;
+        };
+        right_shift_up: right_shift_up {
+            compatible = "zmk,behavior-macro";
+            label = "RIGHT_SHIFT_UP";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp RIGHT_SHIFT>;
+        };
     };
 
     keymap {
@@ -51,7 +50,7 @@
             bindings = <
     &none     &kp N1         &kp N2      &kp N3   &kp N4  &kp N5         &tog 1                                                                      &mo 3  &kp N6     &kp N7     &kp N8            &kp N9             &kp N0    &none
     &none      &kp Q          &kp W       &kp E    &kp R   &kp T          &none                                                                      &none   &kp Y      &kp U      &kp I             &kp O              &kp P    &none
-&kp EQUAL      &kp A          &kp S       &kp D    &kp F   &kp G          &none  &foo LEFT_CONTROL  &none  &none  &none  &none  &foo LEFT_SHIFT      &none   &kp H      &kp J      &kp K             &kp L           &kp SEMI  &kp SQT
+&kp EQUAL      &kp A          &kp S       &kp D    &kp F   &kp G          &none  &right_shift_down  &none  &none  &none  &none  &right_shift_up      &none   &kp H      &kp J      &kp K             &kp L           &kp SEMI  &kp SQT
     &none      &kp Z          &kp X       &kp C    &kp V   &kp B          &none              &none  &none  &none  &none  &none            &none      &none   &kp N      &kp M  &kp COMMA           &kp DOT           &kp FSLH    &none
     &mo 2  &kp GRAVE  &kp BACKSLASH  &kp ESCAPE  &kp TAB          &kp BACKSPACE              &mo 4  &none                &none            &sl 5  &kp SPACE          &kp ENTER  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &mo 2
             >;
