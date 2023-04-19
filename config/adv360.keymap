@@ -37,11 +37,11 @@
 
         default_layer {
             bindings = <
-      &kp ESCAPE     &kp N1  &kp N2   &kp N3   &kp N4  &kp N5         &tog 1                                                                   &mo 3  &kp N6     &kp N7     &kp N8   &kp N9         &kp N0              &none
-           &none      &kp Q   &kp W    &kp E    &kp R   &kp T          &none                                                                   &none   &kp Y      &kp U      &kp I    &kp O          &kp P              &none
-       &kp EQUAL      &kp A   &kp S    &kp D    &kp F   &kp G          &none           &sl 5  &none  &none  &none  &none            &sl 5      &none   &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON   &kp SINGLE_QUOTE
-&kp LEFT_BRACKET      &kp Z   &kp X    &kp C    &kp V   &kp B          &none           &none  &none  &none  &none  &none            &none      &none   &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH  &kp RIGHT_BRACKET
-           &mo 2  &kp GRAVE  &tog 4  &kp ESC  &kp TAB          &kp BACKSPACE  &kp LEFT_SHIFT  &none                &none  &kp RIGHT_SHIFT  &kp SPACE          &kp ENTER  &kp MINUS   &tog 4  &kp BACKSLASH              &mo 2
+&none      &kp N1   &kp N2          &kp N3           &kp N4  &kp N5  &tog 1                                                                   &mo 3  &kp N6          &kp N7        &kp N8            &kp N9             &kp N0  &none
+&none       &kp Q    &kp W           &kp E            &kp R   &kp T   &none                                                                   &none   &kp Y           &kp U         &kp I             &kp O              &kp P  &none
+&none       &kp A    &kp S           &kp D            &kp F   &kp G   &none   &kp BACKSPACE  &none  &none  &none  &none        &kp ENTER      &none   &kp H           &kp J         &kp K             &kp L      &kp SEMICOLON  &none
+&none       &kp Z    &kp X           &kp C            &kp V   &kp B   &none           &none  &none  &none  &none  &none            &none      &none   &kp N           &kp M     &kp COMMA           &kp DOT          &kp SLASH  &none
+&none  &kp ESCAPE  &kp TAB  &kp LEFT_ARROW  &kp RIGHT_ARROW           &sl 2  &kp LEFT_SHIFT  &none                &none  &kp RIGHT_SHIFT  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
             >;
         };
 
@@ -57,11 +57,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                                 &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans   &none                                                 &none  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &none  &trans  &trans  &none  &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &none   &none  &trans  &none  &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+ &none          &kp F1        &kp F2             &kp F3            &kp F4  &kp F5  &tog 1                                                 &mo 3  &kp F6             &kp F7             &kp F8         &kp F9          &kp F10  &kp F11
+&trans          &trans        &trans             &trans            &trans  &trans   &none                                                 &none  &trans             &trans             &trans         &trans           &trans  &kp F12
+&trans  &kp LEFT_SHIFT  &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_CONTROL  &trans   &none  &trans  &trans  &none  &none  &trans  &trans   &none  &trans  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_SHIFT   &trans
+&trans        &kp PLUS     &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans   &none   &none  &trans  &none  &none  &trans   &none   &none  &trans          &kp MINUS          &kp UNDER  &kp BACKSLASH         &kp PIPE   &trans
+&trans    &kp CAPSLOCK    &kp DELETE           &kp HOME           &kp END          &trans  &trans  &trans                &trans  &trans  &trans              &kp PAGE_DOWN        &kp PAGE_UP      &kp GRAVE        &kp TILDE   &trans
             >;
         };
 
@@ -72,26 +72,6 @@
 &none         &none         &none         &none         &none         &none  &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR  &none  &none  &none  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5         &none         &none         &none         &none         &none  &none
 &none         &none         &none         &none         &none         &none                   &none       &none  &none  &none  &none       &none       &none                   &none         &none         &none         &none         &none         &none  &none
 &none         &none         &none    &bl BL_INC    &bl BL_DEC                       &rgb_ug RGB_TOG  &bl BL_TOG  &none                     &none  &bl BL_TOG         &rgb_ug RGB_TOG                  &bl BL_INC    &bl BL_DEC         &none         &none  &none
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans          &trans        &trans        &trans            &trans  &trans  &trans                                                  &trans          &trans          &trans        &trans           &trans  &trans  &trans
-&trans          &trans        &trans        &trans            &trans  &trans  &trans                                                  &trans          &trans          &trans       &kp DEL     &kp CAPSLOCK  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans          &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END  &trans  &trans
-&trans          &trans        &trans        &trans            &trans          &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans           &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans          &trans        &trans        &trans            &trans  &trans  &trans                                                  &trans  &trans             &trans         &trans         &trans           &trans  &trans
-&trans          &trans        &trans        &trans            &trans  &trans  &trans                                                  &trans  &trans             &trans         &trans         &trans           &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_CONTROL  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &trans
-&trans          &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans         &trans         &trans           &trans  &trans
-&trans          &trans        &trans        &trans            &trans          &trans  &trans  &trans                  &trans  &trans  &trans                     &trans         &trans         &trans           &trans  &trans
             >;
         };
     };
